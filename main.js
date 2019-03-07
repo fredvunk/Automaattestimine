@@ -1,21 +1,12 @@
-function add(x, y) {
-    var result;
-    if (typeof x && typeof y) !== 'number') {
-    throw new Error('Params must be a number.');
-    }
-    result = x +y;
-if parseInt(result) !== result) {
-    result = parseFloat(result.toFixed(1));
-}
-    return result;
-}
+// Example
+// Expect add(2,3) to equal 5
+expect(add(2,3)).tobe(5);
 
-add(2, 3);
-add(2, 3);
+//Example:
+// Expect add() to throw an error if x/y are not numbers
+Expect(add(2, 'test')).toThrow();
 
-add('2', '3');
+//test
+// Expect add(0.1, 0.2) to equal 0.3
 
-// Expect 2+3 = 5
-// Expect error IF non-numbers are used | Now Passed
-// Expect 0.1 + 0.2 = 0.30000 | Now passed
-
+Expect (add(0.1, 0.2)).tobe(0.3);
